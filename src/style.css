@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #1976d2;
+  /* Biru */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 10px;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  width: 100%;
+  border-left: 5px solid #1976d2;
+}
+
+.note-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  word-break: break-word;
+  color: #1565c0;
+}
+
+.note-item p {
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.note-item .btn-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.archive {
+  background: #42a5f5;
+}
+
+.delete {
+  background: #d32f2f;
+}
+
+.loading {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .notes-container {
+    max-width: 95%;
+  }
+}
